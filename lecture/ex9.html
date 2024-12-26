@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 100%;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .loader {
+            margin: auto;
+            border: 20px solid #EAF0F6;
+            border-radius: 50%;
+            border-top: 20px solid #FF7A59;
+            width: 200px;
+            height: 200px;
+            animation: spinner 4s linear infinite;
+            background-color: white;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .e3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-direction: reverse;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+    <div></div>
+    <br><br><br><br>
+
+    <div class="loader"></div>
+    <br><br><br><br>
+    <div class="e3"></div>
+
+</body>
+
+</html>

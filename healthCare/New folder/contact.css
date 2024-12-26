@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contact {
+    position: relative;
+    background: linear-gradient(black, blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
+
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.container .contactInfo .box .icon img {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #52a7b6;
+}
+
+.container .form {
+    background-color: #fff;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container .form h2 {
+    color: #333;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .form .input {
+    margin: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.container .form .input span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: 0.5s;
+    color: #666;
+    pointer-events: none;
+
+}
+
+.container .form .input input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+    font-size: 16px;
+    resize: none;
+}
+
+.sumbit {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.container .form input:focus~span,
+.container .form input:valid~span,
+.container .form textarea:focus~span,
+.container .form textarea:valid~span {
+    font-size: 12px;
+    transform: translateY(-20px);
+}

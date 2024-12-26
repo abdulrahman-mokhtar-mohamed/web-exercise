@@ -1,0 +1,58 @@
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #999;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    color: #007BFF;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    align-content: center;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+}
+
+.styled-button:active {
+    transform: scale(0.5);
+}
+
+.styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+
+}
+
+header {
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, darkblue, black);
+    padding: 15px;
+
+}
+
+header .nav {
+    order: 1;
+    flex: 1;
+    align-self: center;
+}
+
+header .log {
+    order: 2;
+    flex: 1;
+    align-self: center;
+    font-family: cursive;
+    font-size: xxx-large;
+    color: lightblue;
+}
+
+header .login {
+    order: 3;
+    flex: 1;
+    align-self: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 20px;
+}
+
+main {
+    background-color: blue;
+    flex: 2;
+}
+
+footer {
+    background-color: orange;
+    flex: 2;
+
+}
